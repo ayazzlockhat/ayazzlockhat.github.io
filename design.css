@@ -77,13 +77,22 @@ body {
 }
 
 .intro-socials a {
-    border-radius: 100%;
+    border-radius: 25%;
     background: #f62459;
     display: inline-block;
     width: 100px;
     height: 100px;
     margin: 0 1%;
     position: relative;
+
+    transform-origin: 50% 65%;
+    transition: transform 0.5s, filter 10s ease-in-out;
+}
+
+.intro-socials a:hover{
+    
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .intro-socials a img {

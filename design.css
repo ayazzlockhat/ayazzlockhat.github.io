@@ -1,25 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
 
+/*Basic entire document stuff*/
 body, html {
     width: 100%;
     height: 100%;
 }
 body {
-    background-color: #343a40;
+    position: relative;
     font-family: 'Prompt', sans-serif;
     margin: 0;
     padding: 0;
+    z-index: 0;
 }
 
+/*Navbar designs*/
 .navbar{
     overflow: hidden;
     position: fixed;
-    top: 20px;
+    display: inline-block;
+    top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 10;
+    z-index: 1;
+    background-color: #343a40;
+    box-shadow: 0 4px 8px 0 #f62459;
+}
 
+#navbarscroll {
+    position: fixed;
+    display: block;
+    top: 0;
+    transition: top 0.3s;
 }
 .navbar a{
     float: right;
@@ -34,6 +48,7 @@ body {
     text-decoration: none;
     margin: 10px 10px;
     font-size: 22px;
+    
 }
 .navbar a:hover {
     background-color: #f62459;
@@ -44,7 +59,11 @@ body {
     margin-right: 5%;
 }
 
+
+
+/*Intro on welcome page*/
 .intro-section {
+    background-color: #343a40;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,14 +79,33 @@ body {
     font-weight: 800;
     font-size: 6rem;
     margin: 0;
-    background: rgb(201,38,66);
-    background: linear-gradient(90deg, rgba(201,38,66,0.9976365546218487) 38%, rgba(36,157,210,1) 45%, rgba(81,37,212,1) 50%, rgba(210,35,215,1) 56%, rgba(201,38,66,1) 62%);
+    color: transparent;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f62459, #c471ed, #12c2e9);
+    background: linear-gradient(to left, #f62459 35%, #c471ed 47%, #12c2e9 73%); 
+    
     background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    /*typing animation h1*/
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 3s steps(30, end) 1s 1 normal both;
+    white-space: nowrap;
 }
 
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/*Intro paragraph*/
 .intro-content p {
     margin: 0;
     color: white;
@@ -75,7 +113,7 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-
+/*intro social media buttons*/
 .intro-socials a {
     border-radius: 25%;
     background: #f62459;
@@ -84,13 +122,11 @@ body {
     height: 100px;
     margin: 0 1%;
     position: relative;
-
     transform-origin: 50% 65%;
     transition: transform 0.5s, filter 10s ease-in-out;
 }
 
 .intro-socials a:hover{
-    
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
@@ -103,4 +139,179 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+/****NEW PAGE****/
+
+/*About Me section*/
+.about-me {
+    background-color:white;
+    padding-bottom: 1rem;
+}
+
+.about-me-content {
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/*About me text*/
+
+
+.about-title {
+    color: #f62459;
+    font-size: 2.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+}
+
+/*About Me Card*/
+.about-me-card {
+    display: inline-block;
+    border-radius: 1rem;
+    width: 400px;
+    height: 550px;
+    margin: 0.5rem 1rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*Card 1 info*/
+.about-me-card img {
+    border-radius: 1rem 1rem 0rem 0rem;
+    display: block;
+    height: 14rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    vertical-align: middle;
+}
+/*Contact card text*/
+
+.about-me-card h3{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 0.1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about-me-card p{
+    padding-top: .25rem;
+    padding-bottom: 0.25rem;
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.95rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about-me-card p b {
+    background: -webkit-linear-gradient(180deg,#f62459 35%, #c471ed 47%, #12c2e9 73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-me-card li:before {
+    content: "‣    ";
+    color: #f62459;
+}
+.about-me-card ul {
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(150px,10px));
+}
+
+/*Education*/
+.education {
+    align-items: center;
+    margin-top: 0.75;
+    display: flex;
+    margin-left: 5%;
+}
+
+.education img {
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    line-height: 0.1rem;
+
+}
+
+.education a {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.95rem;
+    line-height: 0.1rem;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.education:hover {
+    color: #f62459;
+}
+/*Location*/
+.location {
+    align-items: center;
+    margin-top: 0.75;
+    display: flex;
+    line-height: 0.1rem;
+    margin-left: 5%;
+}
+
+.location img {
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    line-height: 0.1rem;
+}
+
+.location a {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.95rem;
+    color: inherit;
+    line-height: 0.1rem;
+}
+
+/*email*/
+.email {
+    align-items: center;
+    margin-top: 0.75;
+    display: flex;
+    line-height: 0.1rem;
+    margin-left: 5%;
+}
+
+.email img {
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    line-height: 0.1rem;
+}
+
+.email a {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: inherit;
+    line-height: 0.1rem;
+    text-decoration: inherit;
+}
+
+.email:hover {
+    color: #f62459;
+}
+
+
 

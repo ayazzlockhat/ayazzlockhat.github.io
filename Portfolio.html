@@ -1,36 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <link rel="stylesheet" href="design.css">
+    <script type="text/javascript" src="js/index.js"></script>
     <title>Ayaz Lockhat</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-<div class="navbar">
+    
+<!--Navbar-->
+<div class="navbar" id="navbarscroll">
     <div class="move">
-    <a href="#">Contact</a>
-    <a href="#">About Me</a>
-    <a href="#">Projects</a>
-    <a href="#">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About Me</a>
+    <a href="#home">Home</a>
     </div>
 </div>
+
+
+
+<!--Welcome Page-->
+<a name="home"></a>
 <div class="intro-section">
 <div class="intro-content">
     <h1>Hi, I'm Ayaz!</h1>
-    <p>Currently a 2nd year Computer Science student attending McMaster University</p>
+    <p>2nd year Computer Science student attending McMaster University</p>
     <div class="intro-socials">
-        <a href="https://www.linkedin.com/in/ayaz-lockhat-7a07ab218/" target="_blank"><img src="linkedinreal.svg"></a>
-        <a href="https://github.com/ayazzlockhat" target="_blank"><img src="github.svg"></a>
-        <a href="https://www.instagram.com/ayazzlockhat/" target="_blank"><img src="instagram.png"></a>
+        <a href="https://www.linkedin.com/in/ayaz-lockhat-7a07ab218/" target="_blank"><img src="images/linkedinreal.svg"></a>
+        <a href="https://github.com/ayazzlockhat" target="_blank"><img src="images/github.svg"></a>
+        <a href="https://www.instagram.com/ayazzlockhat/" target="_blank"><img src="images/instagram.png"></a>
     </div>
 </div>
 </div>
 
-<section class="about-me">
-    <h2>About Me</h2>
+<!--About Me Page-->
+<section id="about" class="about-me">
+    <!--header-->
+    <h1 class="about-title"><span class="span">About Me</span></h1>
+    <!--Entire about me content-->
+    <div class="about-me-content">
+        <!--About card 1 (left card)-->
+        <div class="about-me-card">
+            <img src="images/selfimage.jpg" alt="avatar">
+                <h3>Ayaz Lockhat</h3>
+                <p>Computer Science student with a passion for programming and expanding knowledge.</p>
+                <div class="education">
+                    <img src="images/school.png">
+                    <a target="_blank" href="https://future.mcmaster.ca/programs/computer-science/">McMaster University</a>
+                </div>
+
+                <div class="location">
+                    <img src="images/home.png">
+                    <a>Ontario, Canada</a>
+                </div>
+
+                <div class="email">
+                    <img src="images/email.png">
+                    <a href="mailto:ayazzlockhat@gmail.com">ayazzlockhat@gmail.com</a>
+                </div>
+        </div>
+
+            <!--About card 2 (right card)-->
+            <div class="about-me-card">
+                    <h3>Who I am</h3>
+                    <p>Hi, my name is <b>Ayaz Lockhat</b>, I am currently a 2nd year <b>Computer Science</b> student attending <b>McMaster University</b>.
+                        I am seeking a co-op position for the 4-month spring/summer work term (May 2022-August 2022).
+                        Everyday I work towards my goal of becoming a Computer Scientist. I enjoy expanding my programming knowledge and 
+                        adding valuable information to my toolkit.
+                    </p>
+
+                    <p>During my spare time, I enjoy going on hikes, playing video games,
+                        spending time with family and friends, and travelling around the world.
+                    </p>
+
+                    <p>These are some languages I've been working with:</p>
+
+                    <ul>
+                        <li>HTML & CSS</li>
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        <li>React.js</li>
+                        <li>C</li>
+                        <li>Java</li>
+                    </ul>
+            </div>
+    </div>
 </section>
 
 </body>
+
 </html>

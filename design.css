@@ -296,6 +296,7 @@ body {
 }
 
 .email img {
+    border-radius: 0rem;
     height: 2rem;
     width: 2rem;
     display: block;

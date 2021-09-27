@@ -7,6 +7,10 @@ body, html {
     width: 100%;
     height: 100%;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     font-family: 'Prompt', sans-serif;
@@ -292,6 +296,7 @@ body {
 }
 
 .email img {
+    border-radius: 0rem;
     height: 2rem;
     width: 2rem;
     display: block;

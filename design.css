@@ -452,3 +452,55 @@ Different sized devices
         font-size: 0.89rem;
     }
 }
+
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .mobile-sidebar {
+        display: none;
+    }
+
+    #main {
+        display: none;
+    }
+
+    .navbar {
+        overflow: hidden;
+        position: fixed;
+        display: inline-block;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 10;
+        z-index: 1;
+        background-color: #343a40;
+    }
+    
+    #navbarscroll {
+        position: fixed;
+        top: 0;
+        transition: top 0.3s;
+    }
+    
+    .navbar a{
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        font-family: 'Prompt', sans-serif;
+        padding-left: .2rem;
+        padding-right: .2rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        text-decoration: none;
+        margin: 10px 10px;
+        font-size: 22px;
+        
+    }
+    .navbar a:hover {
+        background-color: #f62459;
+        border-radius: .25rem;
+    }
+    
+    .move{
+        margin-right: 5%;
+    }
+}

@@ -19,8 +19,9 @@ body {
     z-index: 0;
 }
 
+
 /*Navbar designs*/
-.navbar{
+.navbar {
     overflow: hidden;
     position: fixed;
     display: inline-block;
@@ -30,15 +31,14 @@ body {
     bottom: 10;
     z-index: 1;
     background-color: #343a40;
-    box-shadow: 0 3px 8px 0 #f62459;
 }
 
 #navbarscroll {
     position: fixed;
-    display: block;
     top: 0;
     transition: top 0.3s;
 }
+
 .navbar a{
     float: right;
     display: block;
@@ -64,8 +64,12 @@ body {
 }
 
 
+/* 
+/////////////////////
+Intro on welcome page
+/////////////////////
+*/
 
-/*Intro on welcome page*/
 .intro-section {
     background-color: #343a40;
     display: flex;
@@ -109,7 +113,11 @@ body {
     }
 }
 
-/*Intro paragraph*/
+/* 
+/////////////////////
+Intro paragraph
+/////////////////////
+*/
 .intro-content p {
     margin: 0;
     color: white;
@@ -117,7 +125,11 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-/*intro social media buttons*/
+/* 
+/////////////////////
+Intro social media buttons
+/////////////////////
+*/
 .intro-socials a {
     border-radius: 25%;
     background: #f62459;
@@ -144,9 +156,15 @@ body {
     transform: translate(-50%,-50%);
 }
 
+/****************/
 /****NEW PAGE****/
+/****************/
 
-/*About Me section*/
+/* 
+/////////////////////
+About me section
+/////////////////////
+*/
 .about-me {
     background-color:white;
     padding-bottom: 1rem;
@@ -162,9 +180,12 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
 }
-/*About me text*/
 
-
+/* 
+/////////////////////
+About me title
+/////////////////////
+*/
 .about-title {
     color: #f62459;
     font-size: 2.5rem;
@@ -174,7 +195,11 @@ body {
     align-items: center;
 }
 
-/*About Me Card*/
+/* 
+/////////////////////
+About me card
+/////////////////////
+*/
 .about-me-card {
     display: inline-block;
     border-radius: 1rem;
@@ -184,7 +209,11 @@ body {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-/*Card 1 info*/
+/* 
+/////////////////////
+Card 1 info
+/////////////////////
+*/
 .about-me-card img {
     border-radius: 1rem 1rem 0rem 0rem;
     display: block;
@@ -319,4 +348,109 @@ body {
 }
 
 
+/* 
+/////////////////////
+Different sized devices
+/////////////////////
+*/
 
+/* Mobile Screen */
+@media only screen and (max-width: 800px) {
+
+    /**/
+    .navbar {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile-sidebar {
+        height: 25%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #f62459;
+        overflow-x: hidden;
+        padding-top: 50px;
+        transition: 0.5s;
+        border-radius: 1rem 0rem 1rem 1rem;
+    }
+
+    .mobile-sidebar a {
+        padding: 4px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    .mobile-sidebar a:hover {
+        color: white;
+    }
+
+    .mobile-sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 60px;
+        margin-left: 50px;
+    }
+
+    .openbtn {
+        font-size: 25px;
+        cursor: pointer;
+        background-color: #f62459;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 25%;
+        border: none;
+      }
+
+      .openbtn:hover {
+        background-color: #f62459;
+      }
+
+      #main {
+          transition: margin-right 0.5s;
+          padding: 20px;
+      }
+
+      #sidebarscroll {
+        position: fixed;
+        top: 0;
+        transition: top 0.8s;
+        z-index: 1;
+    }
+
+    .intro-content h1 {
+        font-size: 3rem;
+    }
+
+    .intro-content p {
+        font-size: 1rem;
+    }
+
+    .intro-socials a {
+        width: 65px;
+        height: 65px;
+    }
+
+    .about-title {
+        font-size: 2.40rem;
+    }
+
+    .about-me-card h3 {
+        font-size: 1.45rem;
+    }
+
+    .about-me-card p{
+        font-size: 0.89rem;
+    }
+}

@@ -19,7 +19,6 @@ body {
     z-index: 0;
 }
 
-
 /*Navbar designs*/
 .navbar {
     overflow: hidden;
@@ -357,18 +356,17 @@ Different sized devices
 /* Mobile Screen */
 @media only screen and (max-width: 800px) {
 
-    /**/
     .navbar {
         display: none;
     }
 
+
     body {
         width: 100%;
-        height: 100%;
     }
 
     .mobile-sidebar {
-        height: 25%;
+        height: 30%;
         width: 0;
         position: fixed;
         z-index: 1;
@@ -400,7 +398,7 @@ Different sized devices
         top: 0;
         right: 25px;
         font-size: 60px;
-        margin-left: 50px;
+        margin: -15px 0px 0px 50px;
     }
 
     .openbtn {

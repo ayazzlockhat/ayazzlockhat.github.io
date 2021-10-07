@@ -62,6 +62,75 @@ body {
     margin-right: 5%;
 }
 
+/* 
+/////////////////////
+Mobile Sidebar
+/////////////////////
+*/
+
+.mobile-sidebar {
+    display: none;
+    height: 30%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f62459;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s;
+    border-radius: 1rem 0rem 1rem 1rem;
+}
+
+.mobile-sidebar a {
+    padding: 4px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: none;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.mobile-sidebar a:hover {
+    color: white;
+}
+
+.mobile-sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin: -15px 0px 0px 50px;
+}
+
+.openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #f62459;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25%;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #f62459;
+  }
+
+  #main {
+      transition: margin-right 0.5s;
+      padding: 20px;
+      display: none;
+  }
+
+  #sidebarscroll {
+    position: fixed;
+    top: 0;
+    transition: top 0.8s;
+    z-index: 1;
+}
 
 /* 
 /////////////////////
@@ -124,6 +193,7 @@ Intro paragraph
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+
 /* 
 /////////////////////
 Intro social media buttons
@@ -346,6 +416,34 @@ Card 1 info
     color: #f62459;
 }
 
+/* 
+/////////////////////
+        Footer
+/////////////////////
+*/
+
+.footer {
+    position: relative;
+    height: 120px;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: row;
+}
+
+.credits {
+    font-size: 16px;
+    color: #8892b0;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.credits img {
+    border-radius: 25%;
+    height: 3rem;
+    width: 3rem;
+}
+
 
 /* 
 /////////////////////
@@ -360,71 +458,20 @@ Different sized devices
         display: none;
     }
 
-
     body {
         width: 100%;
     }
 
     .mobile-sidebar {
-        height: 30%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #f62459;
-        overflow-x: hidden;
-        padding-top: 50px;
-        transition: 0.5s;
-        border-radius: 1rem 0rem 1rem 1rem;
+        display: block;
     }
 
     .mobile-sidebar a {
-        padding: 4px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: white;
         display: block;
-        transition: 0.3s;
-        z-index: 1;
     }
 
-    .mobile-sidebar a:hover {
-        color: white;
-    }
-
-    .mobile-sidebar .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 60px;
-        margin: -15px 0px 0px 50px;
-    }
-
-    .openbtn {
-        font-size: 25px;
-        cursor: pointer;
-        background-color: #f62459;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 25%;
-        border: none;
-      }
-
-      .openbtn:hover {
-        background-color: #f62459;
-      }
-
-      #main {
-          transition: margin-right 0.5s;
-          padding: 20px;
-      }
-
-      #sidebarscroll {
-        position: fixed;
-        top: 0;
-        transition: top 0.8s;
-        z-index: 1;
+    #main {
+        display: block;
     }
 
     .intro-content h1 {
@@ -453,7 +500,9 @@ Different sized devices
     }
 }
 
+
 @media only screen and (min-width: 801px) and (max-width: 1024px){
+    
     .mobile-sidebar {
         display: none;
     }

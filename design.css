@@ -465,7 +465,6 @@ Card 1 info
 }
 
 .projects-card img {
-    margin: 0;
     width: 100%;
     height: 85%;
     object-fit: cover;
@@ -478,8 +477,8 @@ Card 1 info
     color: #f62459;
     font-family: 'Prompt', sans-serif;
     font-weight: 800;
-    font-size: 1.25rem;
-    line-height: 0.1rem;
+    font-size: 1.21rem;
+    line-height: 0.2rem;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -490,8 +489,7 @@ Card 1 info
 }
 
 .projects-card p {
-    color: black;
-    margin: 0;
+    margin: auto;
     line-height: 1.5;
     font-size: 0.95rem;
 }
@@ -508,6 +506,7 @@ Card 1 info
     display: block;
     width: 25px;
     height: 25px;
+    margin-left: 90%;
 }
 
 /* 
@@ -594,11 +593,15 @@ Different sized devices
     }
 
     .projects-card h3 {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
     .projects-card p {
         font-size: 0.89rem;
+    }
+
+    .projects-card:hover .projects-img, .projects-card:focus-within .projects-img {
+        margin-top: -120px;
     }
 
 }

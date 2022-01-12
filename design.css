@@ -244,6 +244,7 @@ ALL PAGES titles
     font-weight: 800;
     text-align: center;
     align-items: center;
+    padding-top: 0rem;
 }
 
 /****************/
@@ -431,9 +432,10 @@ Card 1 info
         Projects
 /////////////////////
 */
-
+/* Dont know why page title are diff */
 .projects-page {
     background-color: #343a40;
+    padding-top: 0.5rem; 
     padding-bottom: 1rem;
 }
 

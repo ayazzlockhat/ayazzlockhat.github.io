@@ -427,6 +427,37 @@ Card 1 info
     color: #f62459;
 }
 
+/*resume*/
+.resume {
+    align-items: center;
+    margin-top: 0.75;
+    display: flex;
+    line-height: 0.1rem;
+    margin-left: 5%;
+}
+
+.resume img {
+    border-radius: 0rem;
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    line-height: 0.1rem;
+}
+
+.resume a {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: inherit;
+    line-height: 0.1rem;
+    text-decoration: inherit;
+}
+
+.resume:hover {
+    color: #f62459;
+}
 /* 
 /////////////////////
         Projects

@@ -75,7 +75,7 @@ body p b {
 Mobile Sidebar
 /////////////////////
 */
-
+/*
 .mobile-sidebar {
     display: none;
     height: 25%;
@@ -139,7 +139,7 @@ Mobile Sidebar
     top: 0;
     transition: top 0.8s;
     z-index: 1;
-}
+}*/
 
 /* 
 /////////////////////
@@ -509,6 +509,13 @@ Card 1 info
     margin-left: 5%;
     margin-right: 5%;
 }
+
+.projects-card #CSC {
+    font-size: 1.21rem;
+    line-height: 1.15rem;
+    margin-top: 2%;
+}
+
 
 .projects-card .focus-content {
     display: block;

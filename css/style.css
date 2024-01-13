@@ -545,6 +545,133 @@ Card 1 info
 
 /* 
 /////////////////////
+        Experience
+/////////////////////
+*/
+
+.experience-page {
+    background-color: #fafafa;
+    padding-top: 0.5rem; 
+    padding-bottom: 1rem;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    min-height: 375px;
+    max-height: 375px;
+}
+
+.experience-content {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.job-title {
+    color: #313131;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.company-name {
+    color: #f62459;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.job-date {
+    color: #12c2e9;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.job-description {
+    /*padding-top: 24px;*/
+    max-width: 650px;
+    font-size: 20px;
+    margin-left: -40px;
+}
+
+.job-description ul {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    display: block;
+}
+
+.job-description li {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    color: #313131;
+    list-style: none;
+}
+
+.job-description b {
+    background: -webkit-linear-gradient(180deg,#f62459 35%, #c471ed 47%, #12c2e9 73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.job-description li::before {
+    content: "‣";
+    color: #f62459;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.wrapper {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+}
+
+.tabs {
+    width: 200px;
+    background-color: #f62459;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+}
+
+.tabs a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 16px;
+}
+
+.tabs a:hover {
+    background-color: #fafafa;
+    border-radius: 0.5rem;
+    color: #f62459
+}
+
+.tabs a.active {
+    background-color: white;
+    border-radius: 0.5rem;
+    color: #f62459
+}
+
+.content_section {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* 
+/////////////////////
         Footer
 /////////////////////
 */

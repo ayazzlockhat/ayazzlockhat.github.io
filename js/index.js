@@ -35,3 +35,31 @@ window.onload = function() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
     }
+    
+    
+    // Work Experience Tabs
+    document.addEventListener("DOMContentLoaded", function () {
+      var tabs = document.querySelectorAll('.tabs a');
+      var contentSections = document.querySelectorAll('.experience-content .content_section');
+  
+      tabs.forEach(function (tab) {
+          tab.addEventListener('click', function (e) {
+              e.preventDefault();
+  
+              tabs.forEach(function (t) {
+                  t.classList.remove('active');
+              });
+  
+              tab.classList.add('active');
+  
+              var tabNumber = tab.getAttribute('data-tab');
+  
+              contentSections.forEach(function (section) {
+                  section.classList.remove('visible');
+              });
+  
+              document.querySelector('.content_section[data-tab="' + tabNumber + '"]').classList.add('visible');
+          });
+      });
+  });
+  

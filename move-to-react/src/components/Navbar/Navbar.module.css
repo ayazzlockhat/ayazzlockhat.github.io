@@ -1,0 +1,45 @@
+/* Navbar.module.css */
+
+/* Root styles to make navbar fixed at the top */
+.Root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #18181b; /* Dark background like your old navbar */
+  padding: 10px 20px; /* Add padding to make it look better */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  width: 100%; /* Ensure the navbar spans the full width */
+  box-sizing: border-box; /* Ensure padding doesn't break the layout */
+}
+
+/* MenuList to style the navigation container */
+.MenuList {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the items vertically within the navbar */
+  background-color: #18181b; /* Ensure dark background for the menu */
+  padding: 4px;
+  border-radius: 6px;
+  list-style: none;
+  margin: 0;
+}
+
+/* Link styling */
+.Link {
+  display: block;
+  text-decoration: none;
+  font-size: 22px; /* Larger font size, as in your old navbar */
+  line-height: 1;
+  color: #f9f9f9; /* White text color */
+  padding: 0.25rem 0.5rem; /* Padding around the links */
+  margin: 10px 10px; /* Margin between the links */
+  font-family: "Prompt", sans-serif; /* Match the font family */
+}
+
+.Link:hover {
+  background-color: #f62459; /* Hover effect like your old navbar */
+  border-radius: 0.25rem; /* Round the corners of the hover effect */
+}
